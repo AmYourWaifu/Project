@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Projekt Pizza</title>
+<link rel="icon" href="icon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="jquery.scrollTo.min.js"></script>
+</head>
+<body>
+  <script>
+				jQuery(function($)
+		{
+			$.scrollTo(0);
+
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	</script>
+<a href="#" class="scrollup"></a>
+<div class="header">
+  <h1>Projekt Pizza</h1>
+  <p>Godziny Otwarcia: 9:00-23:00</p>
+  <p>ul. Wiatrakowa 15, Gdynia</p>
+  <p>tel. +48 673 378 234</p>
+
+</div>
+
+<div class="navbar">
+  <a href="main.html" class="active">Strona Główna</a>
+  <a href="klasyczna.html" class="center">Klasyczna</a>
+  <a href="wege.html" class="center">Wegetariańska</a>
+  <a href="mieso.html" class="center">Z mięsem</a>
+  <a href="ostra.html" class="center">Ostra</a>
+</div>
+<div class="container">
+ <h1 id="promocje">Promocje</h1>
+ <div class="produkt2w1">
+    <a>2 w cenie 1</a><br>
+    <p class="info">Margherita <br>Pepperoni</p>
+    <p>30 zł</p>
+    <div ><a href="zam_2w1.html"><button class="zamow">Dalej</button></a></div>
+    
+ </div> 
+ <div class="produkt_transparent">
+</div>
+ <div class="produkt_transparent">
+</div>
+ <h1 id="promocje">Pizza</h1>
+ <div class="produkt">
+    <a>Margherita</a><br>
+    <p class="info">Ciasto, Sos pomidorowy,<br> Ser, Oregano</p>
+    <p>23 zł</p>
+    <div ><a href="zam_Margh.html"><button class="zamow">Dalej</button></a></div>
+ </div> 
+ <div class="produkt">
+     <a >Capriciosa</a><br>
+     <p class="info">Ciasto, Sos pomidorowy, Ser,<br> Szynka, Pieczarki, Oregano</p>
+     <p>27 zł</p>
+     <div ><a href="zam_Cap.html"><button class="zamow">Dalej</button></a></div>
+ </div>
+ <div class="produkt">
+     <a>Pepperoni</a><br>
+     <p class="info">Ciasto, Sos pomidorowy, Ser,<br> Salami pepperoni ostre, Oregano</p>
+     <p>28 zł</p>
+     <div ><a href="zam_Pep.html"><button class="zamow">Dalej</button></a></div>
+ </div>
+ 
+ <div class="produkt">
+    <a>Hawajska</a><br>
+    <p class="info">Ciasto, Sos pomidorowy, Ser,<br> Szynka, Ananas, Oregano</p>
+    <p>26 zł</p>
+    <div ><a href="zam_Haw.html"><button class="zamow">Dalej</button></a></div>
+ </div> 
+ <div class="produkt">
+     <a>Jalapeño</a><br>
+    <p class="info">Ciasto, Sos pomidorowy, Ser, Salami, <br>Papryczki japalenos, Oregano</p>
+    <p>34 zł</p>
+    <div ><a href="zam_Jal.html"><button class="zamow">Dalej</button></a></div>
+ </div>
+ <div class="produkt">
+     <a>Cztery sery</a><br>
+     <p class="info">Ciasto, Sos pomidorowy, Ser, Ser mozzarella, <br>Ser pleśniowy, Ser sałatkowy, Oregano</p>
+     <p>31 zł</p>
+     <div ><a href="zam_4.html"><button class="zamow">Dalej</button></a></div>
+ </div>
+</div>
+
+<div class="footer">
+  <h2>Kontakt</h2>
+  <br>
+  <p>tel. +48 673 378 234</p>
+  <p>e-mail: ProjektPizza@wp.pl</p>
+
+</div>
+
+</body>
+</html>

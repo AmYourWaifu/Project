@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pizza Gdynia | Zamównienie</title>
+<link rel="icon" href="icon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="jquery.scrollTo.min.js"></script>
+
+</head>
+<body>
+  <body>
+    <script>
+      jQuery(function($)
+  {
+    $.scrollTo(0);
+  
+    $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+  }
+  );
+  
+  $(window).scroll(function()
+  {
+    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+    else $('.scrollup').fadeOut();		
+  }
+  );
+  
+  </script>
+  <a href="#" class="scrollup"></a>
+
+<div class="header">
+  <h1>Projekt Pizza</h1>
+  <p>Godziny Otwarcia: 9:00-23:00</p>
+  <p>ul. Wiatrakowa 15, Gdynia</p>
+  <p>tel. +48 673 378 234</p>
+
+</div>
+
+<div class="navbar">
+  <a href="main.html" class="active">Strona Główna</a>
+  <a href="klasyczna.html" class="center">Klasyczna</a>
+  <a href="wege.html" class="center">Wegetariańska</a>
+  <a href="mieso.html" class="center">Z mięsem</a>
+  <a href="ostra.html" class="center">Ostra</a>
+</div>
+  <h1 id="zam">Zamównienie</h1>
+  <div class="container">
+    <div class="formularz">
+      <form action="dodaj.php" method="post">
+        <h1>1. Rodzaj pizzy</h1>
+        Pizza:<br> <input type="text" name="pizza" placeholder="Cztery sery" value="Cztery sery" disabled/>
+        <br>
+        <br>
+        Rozmiar:<br> <input type="text" name="rozmiar" placeholder="Duża/Średnia/Mała *" required/>
+        <h1>2. Dane osobowe</h1>
+        <input type="text" name="imie" placeholder="Imie *" required/>
+        <input type="text" name="Nazwisko" placeholder="Nazwisko *" required/>
+        <input type="text" name="miasto" placeholder="Miasto *" required/>
+        <input type="text" name="ulica" placeholder="Ulica *" required/>
+        <input type="text" name="nrmiesz" placeholder="Numer mieszkania * " required/>
+        <input type="text" name="nrtel" placeholder="Numer telefonu * " required/>
+        <br>
+        <input type="checkbox" required/>Akceptuje regulamin*
+        <br>
+        <input type="checkbox" required/>Akceptuje RODO*
+        <h1>3. Uwagi</h1>
+        <input type="text" name="uwagi" placeholder="Uwagi do Zamówienia " required/>
+        <br><br>* Pola wymagane
+        <h1>4. Podsumowanie zamówienia</h1>
+        <div class="gray">
+          <p>31 zł - Pizza cztery sery</p>
+          <p>7 zł - Dostawa</p>
+          <hr>
+          <h3>38 zł</h3>
+      </div>
+    
+        <button type="submit" class="zamow" >Zamów</button>
+      </form>
+    </div>
+  </div>
+<div class="footer">
+  <h2>Kontakt</h2>
+  <br>
+  <p>tel. +48 673 378 234</p>
+  <p>e-mail: ProjektPizza@wp.pl</p>
+
+</div>
+</body>
+</html>
